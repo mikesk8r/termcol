@@ -8,3 +8,7 @@ termcol uses escape codes to change text colors. It also automatically changes t
 ## Usage
 Include the header file in your project and start using it!
 See **example usage** in `example.cpp`.
+To compile:
+```sh
+clang++ example.cpp -o example -std=c++17 && ./example
+```
