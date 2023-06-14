@@ -8,8 +8,34 @@ termcol uses escape codes to change text colors. It also automatically changes t
 
 ## Usage
 Include the header file in your project and start using it!
-See **example usage** in `example.cpp`.
-To compile:
+
+See usage in `example.cpp`, or use some references listed below.
+
+To compile the example for seeing a visual representation:
 ```sh
 clang++ example.cpp -o example -std=c++17 && ./example
 ```
+
+You can use the basic functions to print:
+```cpp
+Colors::brightWhite("Hello, World!");
+```
+
+Use multiple colors:
+``cpp
+Colors::yellow("two ");
+Colors::white("colors!\n");
+``
+
+Or wrap it in a function:
+```cpp
+void sayHello(string person)
+{
+	Colors::brightWhite("Hello, ");
+	Colors::brightRed(person);
+	Colors::brightWhite("!\n");
+}
+
+sayHello("World");
+```
+
