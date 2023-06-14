@@ -1,6 +1,6 @@
 #include "termcol_funcs.hpp"
 
-namespace termcol::Utils
+namespace termcol::utils
 {
     void test()
     {

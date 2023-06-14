@@ -1,74 +1,74 @@
 #include <iostream>
 #include <string>
 
-namespace termcol
+namespace termcol::background
 {
-    void bgRed(string text)
+    void red(string text)
     {
         cout << "\033[31;7m" << text << "\033[0m";
     }
 
-    void bgGreen(string text)
+    void green(string text)
     {
         cout << "\033[32;7m" << text << "\033[0m";
     }
 
-    void bgYellow(string text)
+    void yellow(string text)
     {
         cout << "\033[33;7m" << text << "\033[0m";
     }
 
-    void bgBlue(string text)
+    void blue(string text)
     {
         cout << "\033[34;7m" << text << "\033[0m";
     }
 
-    void bgMagenta(string text)
+    void magenta(string text)
     {
         cout << "\033[35;7m" << text << "\033[0m";
     }
 
-    void bgCyan(string text)
+    void cyan(string text)
     {
         cout << "\033[36;7m" << text << "\033[0m";
     }
 
-    void bgWhite(string text)
+    void white(string text)
     {
         cout << "\033[37;7m" << text << "\033[0m";
     }
 
-    void bgBrightRed(string text)
+    void brightRed(string text)
     {
         cout << "\033[31;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightGreen(string text)
+    void brightGreen(string text)
     {
         cout << "\033[32;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightYellow(string text)
+    void brightYellow(string text)
     {
         cout << "\033[33;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightBlue(string text)
+    void brightBlue(string text)
     {
         cout << "\033[34;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightMagenta(string text)
+    void brightMagenta(string text)
     {
         cout << "\033[35;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightCyan(string text)
+    void brightCyan(string text)
     {
         cout << "\033[36;1;7m" << text << "\033[0m";
     }
 
-    void bgBrightWhite(string text)
+    void brightWhite(string text)
     {
         cout << "\033[37;1;7m" << text << "\033[0m";
     }
