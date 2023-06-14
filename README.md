@@ -22,10 +22,10 @@ Colors::brightWhite("Hello, World!");
 ```
 
 Use multiple colors:
-``cpp
+```cpp
 Colors::yellow("two ");
 Colors::white("colors!\n");
-``
+```
 
 Or wrap it in a function:
 ```cpp
