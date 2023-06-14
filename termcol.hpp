@@ -3,8 +3,34 @@
 #include <stdio.h>
 using namespace std;
 
-namespace Colors
+enum TerminalColors {
+    RED = 31,
+    GREEN = 32,
+    YELLOW = 33,
+    BLUE = 34,
+    MAGENTA = 35,
+    CYAN = 36,
+    WHITE = 37
+};
+
+namespace termcol
 {
+    /**
+    * @param (string) text The text to be used.
+    * @param color The color to be used.
+    * @param isBright Whether the text color is bright or not.
+    * @param isBackground Whether the color should be used as the background.
+    */
+    void colorBuilder(string text, int color, bool isBright, bool isBackground)
+    {
+        string escapeCode = "\033[";
+        escapeCode.append(to_string(color));
+        if (isBright == true) { escapeCode.append(";1"); };
+        if (isBackground == true) { escapeCode.append(";7"); };
+        escapeCode.append("m");
+        cout << escapeCode << text << "\033[0m";
+    }
+
     void red(string text)
     {
         cout << "\033[31m" << text << "\033[0m";
@@ -151,60 +177,38 @@ namespace Colors
     }
 }
 
-namespace Colors::Experimental
-{
-    enum TerminalColors {
-        RED = 31,
-        GREEN = 32,
-        YELLOW = 33,
-        BLUE = 34,
-        MAGENTA = 35,
-        CYAN = 36,
-        WHITE = 37
-    };
-
-    void colorBuilder(string text, int color, bool isBright)
-    {
-        string escapeCode = "\033[";
-        escapeCode.append(to_string(color));
-        if (isBright == true) { escapeCode.append(";1"); };
-        escapeCode.append("m");
-        cout << escapeCode << text << "\033[0m";
-    }
-}
-
-namespace Colors::Utils
+namespace termcol::Utils
 {
     void test()
     {
-        Colors::red("test\n");
-        Colors::green("test\n");
-        Colors::yellow("test\n");
-        Colors::blue("test\n");
-        Colors::magenta("test\n");
-        Colors::cyan("test\n");
-        Colors::white("test\n");
-        Colors::brightBlack("test\n");
-        Colors::brightRed("test\n");
-        Colors::brightGreen("test\n");
-        Colors::brightYellow("test\n");
-        Colors::brightBlue("test\n");
-        Colors::brightMagenta("test\n");
-        Colors::brightCyan("test\n");
-        Colors::brightWhite("test\n");
-        Colors::bgRed("test\n");
-        Colors::bgGreen("test\n");
-        Colors::bgYellow("test\n");
-        Colors::bgBlue("test\n");
-        Colors::bgMagenta("test\n");
-        Colors::bgCyan("test\n");
-        Colors::bgWhite("test\n");
-        Colors::bgBrightRed("test\n");
-        Colors::bgBrightGreen("test\n");
-        Colors::bgBrightYellow("test\n");
-        Colors::bgBrightBlue("test\n");
-        Colors::bgBrightMagenta("test\n");
-        Colors::bgBrightCyan("test\n");
-        Colors::bgBrightWhite("test\n");
+        termcol::red("test\n");
+        termcol::green("test\n");
+        termcol::yellow("test\n");
+        termcol::blue("test\n");
+        termcol::magenta("test\n");
+        termcol::cyan("test\n");
+        termcol::white("test\n");
+        termcol::brightBlack("test\n");
+        termcol::brightRed("test\n");
+        termcol::brightGreen("test\n");
+        termcol::brightYellow("test\n");
+        termcol::brightBlue("test\n");
+        termcol::brightMagenta("test\n");
+        termcol::brightCyan("test\n");
+        termcol::brightWhite("test\n");
+        termcol::bgRed("test\n");
+        termcol::bgGreen("test\n");
+        termcol::bgYellow("test\n");
+        termcol::bgBlue("test\n");
+        termcol::bgMagenta("test\n");
+        termcol::bgCyan("test\n");
+        termcol::bgWhite("test\n");
+        termcol::bgBrightRed("test\n");
+        termcol::bgBrightGreen("test\n");
+        termcol::bgBrightYellow("test\n");
+        termcol::bgBrightBlue("test\n");
+        termcol::bgBrightMagenta("test\n");
+        termcol::bgBrightCyan("test\n");
+        termcol::bgBrightWhite("test\n");
     }
 }
