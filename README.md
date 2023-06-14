@@ -18,22 +18,22 @@ clang++ example.cpp -o example -std=c++17 && ./example
 
 You can use the basic functions to print:
 ```cpp
-Colors::brightWhite("Hello, World!");
+termcol::brightWhite("Hello, World!");
 ```
 
 Use multiple colors:
 ```cpp
-Colors::yellow("two ");
-Colors::white("colors!\n");
+termcol::yellow("two ");
+termcol::white("colors!\n");
 ```
 
 Or wrap it in a function:
 ```cpp
 void sayHello(string person)
 {
-	Colors::brightWhite("Hello, ");
-	Colors::brightRed(person);
-	Colors::brightWhite("!\n");
+	termcol::brightWhite("Hello, ");
+	termcol::brightRed(person);
+	termcol::brightWhite("!\n");
 }
 
 sayHello("World");
