@@ -1,4 +1,5 @@
 enum TerminalColors {
+    BLACK = 30,
     RED = 31,
     GREEN = 32,
     YELLOW = 33,

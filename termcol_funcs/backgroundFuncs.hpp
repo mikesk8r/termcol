@@ -1,75 +1,83 @@
 #include <iostream>
 #include <string>
 
+#include "colorBuilder.hpp"
+#include "../termcol_vars.hpp"
+
 namespace termcol::background
 {
     void red(string text)
     {
-        cout << "\033[31;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::RED, false, true)
     }
 
     void green(string text)
     {
-        cout << "\033[32;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::GREEN, false, true)
     }
 
     void yellow(string text)
     {
-        cout << "\033[33;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::YELLOW, false, true)
     }
 
     void blue(string text)
     {
-        cout << "\033[34;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::BLUE, false, true)
     }
 
     void magenta(string text)
     {
-        cout << "\033[35;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::MAGENTA, false, true)
     }
 
     void cyan(string text)
     {
-        cout << "\033[36;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::CYAN, false, true)
     }
 
     void white(string text)
     {
-        cout << "\033[37;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::WHITE, false, true)
+    }
+
+    void brightBlack(string text)
+    {
+        colorBuilder(text, TerminalColors::BLACK, true, true)
     }
 
     void brightRed(string text)
     {
-        cout << "\033[31;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::RED, true, true)
     }
 
     void brightGreen(string text)
     {
-        cout << "\033[32;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::GREEN, true, true)
     }
 
     void brightYellow(string text)
     {
-        cout << "\033[33;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::YELLOW, true, true)
     }
 
     void brightBlue(string text)
     {
-        cout << "\033[34;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::BLUE, true, true)
     }
 
     void brightMagenta(string text)
     {
-        cout << "\033[35;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::MAGENTA, true, true)
     }
 
     void brightCyan(string text)
     {
-        cout << "\033[36;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::CYAN, true, true)
     }
 
     void brightWhite(string text)
     {
-        cout << "\033[37;1;7m" << text << "\033[0m";
+        colorBuilder(text, TerminalColors::WHITE, true, true)
     }
 }
