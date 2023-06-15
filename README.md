@@ -37,9 +37,9 @@ Or wrap it in a function:
 ```cpp
 void sayHello(string person)
 {
-	termcol::text::brightWhite("Hello, ");
-	termcol::text::brightRed(person);
-	termcol::text::brightWhite("!\n");
+    termcol::text::brightWhite("Hello, ");
+    termcol::text::brightRed(person);
+    termcol::text::brightWhite("!\n");
 }
 
 sayHello("World");
