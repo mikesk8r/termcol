@@ -11,8 +11,15 @@ Include the header file in your project and start using it!
 See usage in `example.cpp`, or use some references listed below.
 
 To compile the example for seeing a visual representation:
+
+Unix
 ```sh
 clang++ example.cpp -o example -std=c++17 && ./example
+```
+
+Windows
+```sh
+g++ example.cpp -o example.exe -std=c++17 && example.exe
 ```
 
 You can use the basic functions to print:
