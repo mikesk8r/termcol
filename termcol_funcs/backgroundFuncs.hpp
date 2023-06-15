@@ -6,6 +6,7 @@
 
 using namespace std;
 
+#pragma once
 namespace termcol::background
 {
     void red(string text)

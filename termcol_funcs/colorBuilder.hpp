@@ -5,6 +5,9 @@
     #include <windows.h>
 #endif
 
+using namespace std;
+
+#pragma once
 namespace termcol
 {
     /**
