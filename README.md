@@ -39,3 +39,8 @@ void sayHello(string person)
 sayHello("World");
 ```
 
+You can also use the color builder:
+```cpp
+//                      text                color             bright   bg
+termcol::colorBuilder("Hello!", termcol::TerminalColors::CYAN, true, false)
+```
