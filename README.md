@@ -1,5 +1,5 @@
 # NOTICE - READ ME!
-This library is not maintained by me anymore. It's fairly complete, however there are much better options than mine. I will not help with fixing any code, however you can freely fork it and fix anything you want. You can do whatever you want with the code, as I don't really care about it at all.
+This library is **not maintained by me anymore**. It's fairly complete, however there are much better options than mine. I will not help with fixing any code, however you can freely fork it and fix anything you want. You can do whatever you want with the code, as I don't really care about it at all.
 
 # termcol
 A simple and fast free-to-use cross-platform C++ library for colored text in the terminal.
