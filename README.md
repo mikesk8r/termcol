@@ -1,6 +1,6 @@
 # termcol
 A simple and fast free-to-use cross-platform C++ library for colored text in the terminal.
-This library partially supports Windows, termcol working on CMD/Powershell is **not guaranteed**.
+This library does not fully support Windows. Do **not** expect it to work.
 
 ## How it works
 termcol uses escape codes to change text colors. It also automatically changes the text back, so **no manually resetting the text color**!
